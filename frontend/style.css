@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f8fa;
+    color: #333;
+}
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #00695c;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #b2dfdb;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 105, 92, 0.8),
+        rgba(0, 105, 92, 0.8)
+    );
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: white;
+    color: #00695c;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #b2dfdb;
+}
+
+
+/* Sections */
+
+.intro,
+.services-preview {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.intro h2,
+.services-preview h2 {
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+
+/* Service cards */
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background: #004d40;
+    color: white;
+    padding: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+}
+/* Appointment Page */
+
+.appointment-section {
+    padding: 60px 20px;
+    background: #f5f8fa;
+}
+
+.appointment-container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-container h1 {
+    text-align: center;
+    color: #00695c;
+    margin-bottom: 10px;
+}
+
+.appointment-container p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.appointment-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background: #00695c;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.appointment-btn:hover {
+    background: #004d40;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+/* About Hero */
+
+.about-hero {
+    background: #00695c;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+
+/* About Section */
+
+.about-section {
+    padding: 60px 8%;
+    background: #f5f8fa;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h2 {
+    color: #00695c;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-card {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h3 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+
+/* Mission */
+
+.mission-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.mission-section h2 {
+    color: #00695c;
+    margin-bottom: 30px;
+}
+
+.mission-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.mission-card {
+    background: blue;
+    width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission-card h3 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+
+/* Why Us */
+
+.why-us {
+    padding: 60px 8%;
+    background: #f5f8fa;
+    text-align: center;
+}
+
+.why-us h2 {
+    color: #00695c;
+    margin-bottom: 30px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.why-card {
+    background: blue;
+    width: 280px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.why-card h3 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-card {
+        width: 100%;
+    }
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+}
+/* Services Hero */
+
+.services-hero {
+    background: #00695c;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.services-hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.services-hero p {
+    font-size: 18px;
+}
+
+
+/* Services Section */
+
+.services-section {
+    padding: 60px 8%;
+    text-align: center;
+    background: #f5f8fa;
+}
+
+.services-section h2 {
+    color: #00695c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services-intro {
+    margin-bottom: 40px;
+}
+
+
+/* Services Container */
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+/* Service Box */
+
+.service-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.service-box h3 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    margin-bottom: 25px;
+}
+
+
+/* Service Button */
+
+.service-btn {
+    margin-top: auto;
+    padding: 10px 18px;
+    background: #00695c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.service-btn:hover {
+    background: #004d40;
+}
+
+
+/* Call To Action */
+
+.service-cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e0f2f1;
+}
+
+.service-cta h2 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+.service-cta p {
+    margin-bottom: 25px;
+}
+
+
+/* Mobile Services */
+
+@media (max-width: 900px) {
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .services-hero h1 {
+        font-size: 32px;
+    }
+
+}
+/* Contact Hero */
+
+.contact-hero {
+    background: #00695c;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+}
+
+
+/* Contact Section */
+
+.contact-section {
+    padding: 60px 8%;
+    text-align: center;
+    background: #f5f8fa;
+}
+
+.contact-section h2 {
+    color: #00695c;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-intro {
+    margin-bottom: 40px;
+}
+
+
+/* Contact Cards */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    margin-bottom: 8px;
+}
+
+.contact-card a {
+    color: #00695c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* Message Section */
+
+.message-section {
+    padding: 60px 20px;
+    background: white;
+}
+
+.message-container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.message-container h2 {
+    color: #00695c;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.message-container > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* Contact Form */
+
+.contact-btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    background: #00695c;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #004d40;
+}
+
+#contactMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Contact CTA */
+
+.contact-cta {
+    text-align: center;
+    padding: 60px 20px;
+    background: #e0f2f1;
+}
+
+.contact-cta h2 {
+    color: #00695c;
+    margin-bottom: 15px;
+}
+
+.contact-cta p {
+    margin-bottom: 25px;
+}
+
+
+/* Responsive Contact Page */
+
+@media (max-width: 900px) {
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-hero h1 {
+        font-size: 32px;
+    }
+
+}
+/* JavaScript Success Messages */
+
+.success-message {
+    margin-top: 20px;
+    padding: 20px;
+    background: #e0f2f1;
+    border: 2px solid #00695c;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.success-message h3 {
+    color: #00695c;
+    margin-bottom: 10px;
+}
+
+.success-message p {
+    margin: 5px 0;
+}
+
+.error-message {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fdecea;
+    border: 2px solid #f5c2c0;
+    color: #611a15;
+    border-radius: 8px;
+    text-align: center;
+}
